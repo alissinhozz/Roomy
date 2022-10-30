@@ -23,11 +23,10 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="imovel">Saiba mais</a></div>
+                               <?php echo anchor('imovel/view/' . $imovel['idImovel'], 'Saiba mais')?>
                             </div>
                         </div>
                     </div>
-               
           
         <?php endforeach;?>
         </div>

@@ -12,7 +12,8 @@ class Home extends BaseController
         $dados = [
             'imoveis' => $singleImoveisModel->findAll()
         ];
-
         return view('index', $dados);
+        
     }
+   
 }
