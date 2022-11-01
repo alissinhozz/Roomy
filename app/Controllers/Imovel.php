@@ -1,17 +1,13 @@
 <?php namespace App\Controllers;
 use App\Models\SingleImoveisModel;
 class Imovel extends BaseController{
-    public function index()
+    public function index($idImovel)
     {
-        return view('imovel/home');
+        $singleImoveisModel = new SingleImoveisModel();
+        $dados = [
+            'imovel'=> $singleImoveisModel->find($idImovel)
+        ];
+        return view('imovel', $dados);
     }
 
-
-    public function view($idImovel){ 
-     $singleImoveisModel = new SingleImoveisModel();
-    $dados = [
-        'imovel'=>  $singleImoveisModel->find($idImovel)
-    ];
-    return view('imovel', $dados);
-    }
 }

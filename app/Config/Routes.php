@@ -37,6 +37,8 @@ $routes->get('minhaconta', 'Conta::index');
 $routes->get('meusvinculos', 'MeusVinculos::index');
 $routes->get('cadastro', 'Cadastro::index');
 $routes->get('login', 'Login::index');
+$routes->get('imovel', 'Imovel::view');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

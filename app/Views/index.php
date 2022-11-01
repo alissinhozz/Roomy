@@ -22,8 +22,8 @@
                                 </div>
                             </div>
                             <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                               <?php echo anchor('imovel/view/' . $imovel['idImovel'], 'Saiba mais')?>
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent"> 
+                            <?php echo anchor('imovel/index/' . $imovel['idImovel'], 'Saiba mais')?>
                             </div>
                         </div>
                     </div>
