@@ -6,6 +6,7 @@ class Pesquisa extends BaseController
 {
     public function index()
     {
-        echo view('pesquisa');
+        $this->load->model('busca_model');
+        
     }
 }

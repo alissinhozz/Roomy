@@ -23,7 +23,9 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent"> 
-                            <?php echo anchor('imovel/index/' . $imovel['idImovel'], 'Saiba mais')?>
+                            <form class="d-flex" action="imovel">
+                            <button>Saiba mais</button>
+                             </form>
                             </div>
                         </div>
                     </div>
