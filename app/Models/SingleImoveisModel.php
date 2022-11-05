@@ -13,4 +13,6 @@ class SingleImoveisModel extends Model
         'foto',
         'inst_prox',
     ];
+    
+
 }
