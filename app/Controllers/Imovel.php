@@ -1,11 +1,12 @@
 <?php
 
 namespace App\Controllers;
+use App\Models\SingleImoveisModel;
 
 class Imovel extends BaseController
 {
-    public function index($idImovel)
+    public function index()
     {
-        echo view ('imovel');
+       return view(imovel);
     }
 }

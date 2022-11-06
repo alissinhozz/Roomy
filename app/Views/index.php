@@ -22,9 +22,7 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent"> 
-                            <form class="d-flex" action="<?php  return view('Imovel', ['idImovel']); ?>">
-                            <button>Saiba mais</button>
-                             </form>
+                            <p><button>Saiba mais</button</p>;
                             </div>
                         </div>
                     </div>
