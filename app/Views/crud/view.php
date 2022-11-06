@@ -1,5 +1,4 @@
-<?php echo $this->extend('templates/layout') ?>
-<?php echo $this->section('content') ?>
+
 <div class="card card-outline card-primary rounded-0">
     <div class="card-header">
         <div class="h4 mb-0">Detalhes do Imóvel</div>
@@ -40,4 +39,3 @@
             <a href="<?= base_url('main/list') ?>" class="btn btn btn-light bg-gradient-light border btn-sm rounded-0"><i class="fa fa-angle-left"></i> Voltar para a lista</a>
     </div>
 </div>
-<?php echo $this->endSection() ?>

@@ -22,7 +22,7 @@ class Main extends BaseController
     public function create(){
         $this->data['page_title'] = "Add New";
         $this->data['request'] = $this->request;
-        echo view('templates/layout', $this->data);
+        echo view('templates/header', $this->data);
         echo view('crud/create', $this->data);
     
     }
@@ -56,7 +56,7 @@ class Main extends BaseController
             $id =!empty($this->request->getPost('id')) ? $this->request->getPost('id') : $save;
             return redirect()->to('/main/view_details/'.$id);
         }else{
-            echo view('templates/layout', $this->data);
+            echo view('templates/header', $this->data);
             echo view('crud/create', $this->data);
             
         }
@@ -70,7 +70,7 @@ class Main extends BaseController
         
         $this->data['page_title'] = "List of Contacts";
         $this->data['list'] = $this->crud_model->orderBy('id ASC')->select('*')->get()->getResult();
-        
+        echo view('templates/header', $this->data);
         echo view('crud/list', $this->data);
     }
  
@@ -83,7 +83,7 @@ class Main extends BaseController
         $this->data['page_title'] = "Editar Imóvel";
         $qry= $this->crud_model->select('*')->where(['id'=>$id]);
         $this->data['data'] = $qry->first();
-        
+        echo view('templates/header', $this->data);
         echo view('crud/edit', $this->data);
        
     }
@@ -110,6 +110,7 @@ class Main extends BaseController
         $this->data['page_title'] = "View Contact Details";
         $qry= $this->crud_model->select("*")->where(['id'=>$id]);
         $this->data['data'] = $qry->first();
+       echo view('templates/header', $this->data);
         echo view('crud/view', $this->data);
     
     }

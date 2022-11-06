@@ -62,6 +62,6 @@
     </div>
     <div class="card-footer text-center">
         <button class="btn btn-primary" form="create-form" type="submit"><i class="fa fa-save"></i> Salvar</button>
-        <button class="btn btn-secondary" form="create-form" type="reset"><i class="fa fa-times"></i> Resetar</button>
+        <button class="btn btn-secondary" form="create-form" type="reset"><i class="fa fa-times"></i> Descartar</button>
     </div>
 </div>

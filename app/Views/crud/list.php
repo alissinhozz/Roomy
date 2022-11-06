@@ -1,5 +1,4 @@
-<?php echo $this->extend('templates/layout') ?>
-<?php echo $this->section('content') ?>
+
 
 <div class="card card-outline card-primary rounded-0">
     <div class="card-header">
@@ -45,9 +44,9 @@
                                 
                                 <td class="p-1 align-middle text-center">
                                     <div class="btn-group btn-group-sm">
-                                        <a href="<?= base_url('main/view_details/'.$row->id) ?>" class="btn btn-default bg-gradient-light border text-dark rounded-0" title="View Contact"><i class="fa fa-eye"></i>a</a>
-                                        <a href="<?= base_url('main/edit/'.$row->id) ?>" class="btn btn-primary rounded-0" title="Edit Contact">a<i class="fa fa-edit"></i></a>
-                                        <a href="<?= base_url('main/delete/'.$row->id) ?>" onclick="if(confirm('Tem certeza que deseja excluir esse imóvel?') === false) event.preventDefault()" class="btn btn-danger rounded-0" title="Delete Contact"><i class="fa fa-trash">a</i></a>
+                                        <a href="<?= base_url('main/view_details/'.$row->id) ?>" class="btn btn-default bg-gradient-light border text-dark rounded-0" title="View Contact"><i class="fa fa-eye"></i></a>
+                                        <a href="<?= base_url('main/edit/'.$row->id) ?>" class="btn btn-primary rounded-0" title="Edit Contact"><i class="fa fa-edit"></i></a>
+                                        <a href="<?= base_url('main/delete/'.$row->id) ?>" onclick="if(confirm('Tem certeza que deseja excluir esse imóvel?') === false) event.preventDefault()" class="btn btn-danger rounded-0" title="Delete Contact"><i class="fa fa-trash"></i></a>
                                     </div>
                                 </td>
                             </tr>
@@ -55,8 +54,9 @@
                     <?php endif; ?>
                 </tbody>
             </table>
- 
+            <div class="d-flex justify-content-end">
+        <a href="<?= base_url('main/create') ?>" class="btn btn-success mb-2"> Adicionar Imóvel</a> 
+        </div>
         </div>
     </div>
 </div>
-<?php echo $this->endSection() ?>
