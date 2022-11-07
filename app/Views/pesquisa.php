@@ -1,7 +1,7 @@
 <?php echo $this->extend('layout') ?>
 <?php echo $this->section('content') ?>
 
-<form method="post">
+<form method="post" style="width: 50rem;  margin-top: 40px; margin-left: 200PX">
 <div class="input-group">
   <input type="text" name="inputName" class="form-control rounded" placeholder="Insira o nome da cidade" aria-label="Search" aria-describedby="search-addon" />
   <button type="submit" class="btn btn-outline-primary">Pesquisar</button>
