@@ -22,7 +22,7 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent"> 
-                            <p><button>Saiba mais</button</p>;
+                            <p><?php echo anchor('imovel/index/'.$imovel['idImovel'], 'Saiba mais')?></p>
                             </div>
                         </div>
                     </div>

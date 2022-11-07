@@ -5,6 +5,7 @@ use CodeIgniter\Model;
 class SingleImoveisModel extends Model
 {
     protected $table = 'imovel';
+    protected $primaryKey = 'idImovel';
     protected $allowedFields = [
         'idImovel',
         'bairro',
