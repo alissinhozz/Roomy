@@ -45,7 +45,7 @@
                     <th>Tipo</th>
                 </tr>
                 <tr>
-                    <th>Foto</th>
+                    <th>Foto</th> 
                 </tr>
             </thead>
             <tbody>
@@ -78,9 +78,9 @@
                 <tr>
                     <td><?php echo $usu['tipo']; ?></td>
                 </tr>
-                <!--<tr>
-                    <td><?php echo $usu['fotoUser']; ?></td>
-                </tr>-->
+                <tr>
+                    <td><?php// echo $usu['fotoUser']; ?></td>
+                </tr>
                 <tr>
                     <td>
                     <a href="<?php echo base_url('edit-view/'.$usu['idUsuario']);?>" class="btn btn-primary btn-sm">Editar</a>

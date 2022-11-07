@@ -32,15 +32,15 @@ class Conta extends Controller
             'descricao'  => $this->request->getVar('descricao'),
             'senha'  => $this->request->getVar('senha'),
             'tipo'  => $this->request->getVar('tipo'),
-            'fotoUser'  => $this->request->getVar('fotoUser'),
+            //'fotoUser'  => $this->request->getVar('fotoUser'),
         ];
         $usuarioModel->update($idUsuario, $data);
         return $this->response->redirect(site_url('/users-list'));
     }
     // delete user
-   // public function delete($id = null){
-    //    $usuarioModel = new UsuarioModel();
-    //    $data['usuario'] = $usuarioModel->where('idUsuario', $idUsuario)->delete($idUsuario);
-    //    return $this->response->redirect(site_url('/users-list'));
-  //  }   
+   public function delete($id = null){
+    $usuarioModel = new UsuarioModel();
+    $data['usuario'] = $usuarioModel->where('idUsuario', $idUsuario)->delete($idUsuario);
+     return $this->response->redirect(site_url('/users-list'));
+  }  
 }

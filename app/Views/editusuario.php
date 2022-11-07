@@ -55,7 +55,7 @@
                     </div>
                     <div class="form-group">
                         <label>Foto</label>
-                        <input type="image" name="fotoUser" class="form-control" value="<?php echo $user_obj['fotoUser']; ?>">
+                        <input type="image" name="fotoUser" class="form-control" value="<?php// echo $user_obj['fotoUser']; ?>">
                     </div>
                     <div class="form-group"><br/>
                     <button type="submit" class="btn btn-info btn-block">Salvar alterações</button>
