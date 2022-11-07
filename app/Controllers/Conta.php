@@ -38,9 +38,9 @@ class Conta extends Controller
         return $this->response->redirect(site_url('/users-list'));
     }
     // delete user
-   public function delete($id = null){
+   public function delete($idUsuario = null){
     $usuarioModel = new UsuarioModel();
     $data['usuario'] = $usuarioModel->where('idUsuario', $idUsuario)->delete($idUsuario);
-     return $this->response->redirect(site_url('/users-list'));
+     return $this->response->redirect(site_url('cadastro'));
   }  
 }
