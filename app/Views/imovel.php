@@ -44,12 +44,12 @@
     <div class="card" style="width: 50rem;  margin-top: 40px;">
   <img class="card-img-top" src=".../100px180/?text=Image cap" alt="">
   <div class="card-body">
-    <h5 class="card-title"><?php echo $imovel['cidade']?></h5>
-    <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+    <h5 class="card-title"><img src="" alt=""></h5>
+
   </div>
   <ul class="list-group list-group-flush">
-    <li class="list-group-item">Cras justo odio</li>
-    <li class="list-group-item">Dapibus ac facilisis in</li>
+    <li class="list-group-item"><?php echo $imovel['cidade']?> - <?php echo $imovel['estado']?></li>
+    <li class="list-group-item"><?php echo $imovel['cidade']?></li>
     <li class="list-group-item">Vestibulum at eros</li>
   </ul>
   <div class="card-body">
