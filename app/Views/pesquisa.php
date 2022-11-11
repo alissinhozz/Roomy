@@ -31,7 +31,7 @@
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent"> 
                             <form class="d-flex" action="imovel">
-                            <button>Saiba mais</button>
+                            <p><?php echo anchor('imovel/index/'.$city['idImovel'], 'Saiba mais')?></p>
                              </form>
                             </div>
                         </div>
