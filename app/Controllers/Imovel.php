@@ -5,8 +5,12 @@ use App\Models\SingleImoveisModel;
 
 class Imovel extends BaseController
 {
-    public function index()
+    public function index($idImovel)
     {
-       return view(imovel);
+       $singleImoveisModel = new SingleImoveisModel();
+       $dados =[
+        'imovel'=> $singleImoveisModel->find($idImovel)
+       ];
+       return view('imovel', $dados);
     }
 }

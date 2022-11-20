@@ -1,7 +1,7 @@
 <?php echo $this->extend('layout') ?>
 <?php echo $this->section('content') ?>
 
-<form method="post">
+<form method="post" style="width: 50rem;  margin-top: 40px; margin-left: 200PX">
 <div class="input-group">
   <input type="text" name="inputName" class="form-control rounded" placeholder="Insira o nome da cidade" aria-label="Search" aria-describedby="search-addon" />
   <button type="submit" class="btn btn-outline-primary">Pesquisar</button>
@@ -31,7 +31,7 @@
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent"> 
                             <form class="d-flex" action="imovel">
-                            <button>Saiba mais</button>
+                            <p><?php echo anchor('imovel/index/'.$city['idImovel'], 'Saiba mais')?></p>
                              </form>
                             </div>
                         </div>
