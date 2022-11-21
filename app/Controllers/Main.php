@@ -31,7 +31,7 @@ class Main extends BaseController
         $post = [
             
            
-            'contato' => $this->request->getPost('contato'),
+            'contatoUser' => $this->request->getPost('contatoUser'),
             'estado' => $this->request->getPost('estado'),
             'tamquarto' => $this->request->getPost('tamquarto'),
             'tam_imovel' => $this->request->getPost('tam_imovel'),

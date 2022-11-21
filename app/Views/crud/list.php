@@ -40,7 +40,7 @@
                                 <td class="p-1 align-middle"><?= $row->inst_prox ?></td>
                                 <td class="p-1 align-middle"><?= $row->estado ?></td>
                                 <td class="p-1 align-middle"><?= $row->cidade ?></td>
-                                <td class="p-1 align-middle"><?= $row->contato ?></td>
+                                <td class="p-1 align-middle"><?= $row->contatoUser ?></td>
                                 
                                 <td class="p-1 align-middle text-center">
                                     <div class="btn-group btn-group-sm">

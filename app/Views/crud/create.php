@@ -46,8 +46,8 @@
                             <input type="text" class="form-control" id="bairro" name="bairro" required="required" value="<?= !empty($request->getPost('bairro')) ? $request->getPost('bairro') : '' ?>">
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                            <label for="contato" class="control-label">Contato </label>
-                            <input type="text" class="form-control" id="contato" name="contato" required="required" value="<?= !empty($request->getPost('contato')) ? $request->getPost('contato') : '' ?>">
+                            <label for="contatoUser" class="control-label">Contato </label>
+                            <input type="text" class="form-control" id="contatoUser" name="contatoUser" required="required" value="<?= !empty($request->getPost('contatoUser')) ? $request->getPost('contatoUser') : '' ?>">
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                             <label for="descricao" class="control-label">Descrição</label>
