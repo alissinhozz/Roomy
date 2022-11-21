@@ -1556,7 +1556,7 @@ fieldset[disabled] .btn-neutral.active {
     -webkit-box-shadow: none;
     box-shadow: none;
     outline: 0 !important;
-    color: #333333;
+    color: #EB6D6D;
 }
 
 .has-success .form-control,
@@ -2725,19 +2725,19 @@ Copyright (c) 2015 Daniel Eden
 .dropdown-menu .dropdown-item:hover,
 .dropdown-menu .dropdown-item:focus {
     background-color: #F5F5F5;
-    color: #333333;
+    color: #EB6D6D;
     opacity: 1;
     text-decoration: none;
 }
 
 .dropdown-menu.dropdown-blue>li>a:hover,
 .dropdown-menu.dropdown-blue>li>a:focus {
-    background-color: rgba(52, 114, 247, 0.2);
+    background-color: #EB6D6D;
 }
 
 .dropdown-menu.dropdown-azure>li>a:hover,
 .dropdown-menu.dropdown-azure>li>a:focus {
-    background-color: rgba(29, 199, 234, 0.2);
+    background-color: #EB6D6D;
 }
 
 .dropdown-menu.ct-green>li>a:hover,
@@ -2886,7 +2886,7 @@ Copyright (c) 2015 Daniel Eden
 
 .card .card-title {
     margin: 0;
-    color: #333333;
+    color: #EB6D6D;
     font-weight: 300;
 }
 
@@ -4679,7 +4679,7 @@ Copyright (c) 2015 Daniel Eden
 .bootstrap-switch .bootstrap-switch-label {
     text-align: center;
     z-index: 100;
-    color: #333333;
+    color: #EB6D6D;
     background: #ffffff;
     width: 22px !important;
     height: 22px;

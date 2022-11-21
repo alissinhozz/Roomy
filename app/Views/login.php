@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-    <title>CodeIgniter 4 Auth Video</title>
+    <title>Faça login</title>
 
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
@@ -25,7 +25,7 @@
 
 </head>
 
-<body style="background-color: #40535B;
+<body style="background-color: #e2a4a4;
       background-size: cover;
 
 -webkit-background-size: cover; /* SAFARI / CHROME */
@@ -48,7 +48,7 @@
                         
                         <!--   if you want to have the card without animation please remove the ".card-hidden" class   -->
                         <div class="card card-hidden" style="position: fixed; min-height: 480px; width: 360px; margin-top: 10px; padding-bottom: 10px;">
-                            <div class="header text-center"><img src="img/logo.png" /></div>
+                            <div class="header text-center"><img src="assets/loguinho.png" /></div>
                                 <div class="header text-center">Acessar Painel</div>
                                 <div class="content">
                                     <div class="form-group">

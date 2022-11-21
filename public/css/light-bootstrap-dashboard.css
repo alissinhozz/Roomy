@@ -329,7 +329,7 @@ input:focus {
 .sidebar .logo,
 body > .navbar-collapse .logo {
   padding: 10px 15px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid #EB6D6D;
 }
 .sidebar .logo p,
 body > .navbar-collapse .logo p {
@@ -502,32 +502,30 @@ body > .navbar-collapse[data-color="purple"]:after {
 }
 
 .btn {
-  border-width: 2px;
   background-color: transparent;
   font-weight: 400;
   opacity: 0.8;
   filter: alpha(opacity=80);
   padding: 8px 16px;
-  border-color: #888888;
-  color: #888888;
+  color: #EB6D6D;
 }
 .btn:hover, .btn:focus, .btn:active, .btn.active, .open > .btn.dropdown-toggle {
   background-color: transparent;
-  color: #777777;
-  border-color: #777777;
+  color: #EB6D6D;
+  border-color: #EB6D6D;
 }
 .btn.disabled, .btn.disabled:hover, .btn.disabled:focus, .btn.disabled.focus, .btn.disabled:active, .btn.disabled.active, .btn:disabled, .btn:disabled:hover, .btn:disabled:focus, .btn:disabled.focus, .btn:disabled:active, .btn:disabled.active, .btn[disabled], .btn[disabled]:hover, .btn[disabled]:focus, .btn[disabled].focus, .btn[disabled]:active, .btn[disabled].active, fieldset[disabled] .btn, fieldset[disabled] .btn:hover, fieldset[disabled] .btn:focus, fieldset[disabled] .btn.focus, fieldset[disabled] .btn:active, fieldset[disabled] .btn.active {
   background-color: transparent;
   border-color: #888888;
 }
 .btn.btn-fill {
-  color: #FFFFFF;
-  background-color: #888888;
+  color: #050505;
+  background-color: #EB6D6D;
   opacity: 1;
   filter: alpha(opacity=100);
 }
 .btn.btn-fill:hover, .btn.btn-fill:focus, .btn.btn-fill:active, .btn.btn-fill.active, .open > .btn.btn-fill.dropdown-toggle {
-  background-color: #777777;
+  background-color: #c75a5a;
   color: #FFFFFF;
 }
 .btn.btn-fill .caret {
@@ -859,7 +857,7 @@ body > .navbar-collapse[data-color="purple"]:after {
   -webkit-box-shadow: none;
   box-shadow: none;
   outline: 0 !important;
-  color: #333333;
+  color: #EB6D6D;
 }
 .has-success .form-control, .has-error .form-control, .has-success .form-control:focus, .has-error .form-control:focus {
   border-color: #E3E3E3;
@@ -1104,7 +1102,7 @@ body > .navbar-collapse[data-color="purple"]:after {
   font-size: 14px;
   font-weight: normal;
   line-height: 1.5;
-  color: #333333;
+  color: #EB6D6D;
 }
 
 .checkbox input,
@@ -1431,13 +1429,14 @@ body > .navbar-collapse[data-color="purple"]:after {
 .navbar .btn-simple {
   font-size: 16px;
 }
+/*
 .navbar.fixed {
   width: calc(100% - $sidebar-width);
   right: 0;
   left: auto;
   border-radius: 0;
 }
-
+*/
 .navbar-nav > li > .dropdown-menu {
   border-radius: 10px;
   margin-top: -5px;
@@ -1759,7 +1758,7 @@ body > .navbar-collapse[data-color="purple"]:after {
 }
 .dropdown-menu > li > a {
   padding: 8px 16px;
-  color: #333333;
+  color: #EB6D6D;
 }
 .dropdown-menu > li > a img {
   margin-top: -3px;
@@ -1785,7 +1784,7 @@ body > .navbar-collapse[data-color="purple"]:after {
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
   background-color: #F5F5F5;
-  color: #333333;
+  color: #EB6D6D;
   opacity: 1;
   text-decoration: none;
 }
@@ -1832,7 +1831,7 @@ body > .navbar-collapse[data-color="purple"]:after {
 }
 
 .card {
-  border-radius: 4px;
+  border-radius: 20px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(63, 63, 68, 0.1);
   background-color: #FFFFFF;
   margin-bottom: 30px;
@@ -1905,7 +1904,7 @@ body > .navbar-collapse[data-color="purple"]:after {
 }
 .card .title {
   margin: 0;
-  color: #333333;
+  color: #e2a4a4;
   font-weight: 300;
 }
 .card .avatar {
@@ -1917,7 +1916,7 @@ body > .navbar-collapse[data-color="purple"]:after {
 }
 .card .description {
   font-size: 14px;
-  color: #333;
+  color: #EB6D6D;
 }
 .card .footer {
   padding: 0;
@@ -2829,12 +2828,12 @@ body > .navbar-collapse[data-color="purple"]:after {
 
   .navbar-transparent {
     padding-top: 15px;
-    background-color: rgba(0, 0, 0, 0.45);
+    background-color: #EB6D6D(0, 0, 0, 0.45);
   }
 
   body {
     position: relative;
-  }
+  } 
 
   .wrapper {
     -webkit-transform: translate3d(0px, 0, 0);
@@ -2848,7 +2847,7 @@ body > .navbar-collapse[data-color="purple"]:after {
     -ms-transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1);
     transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1);
     left: 0;
-    background-color: white;
+    background-color: #eba2a2;
   }
 
   .navbar .container {
@@ -2915,7 +2914,7 @@ body > .navbar-collapse[data-color="purple"]:after {
     height: 100%;
     width: 100%;
     position: absolute;
-    background-color: #282828;
+    background-color: #EB6D6D;
     display: block;
     content: "";
     z-index: 1;
