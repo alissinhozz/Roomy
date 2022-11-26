@@ -32,7 +32,7 @@
                             Login
                         </button>
                         </form>
-                        <form class="d-flex" action="cadastro">
+                        <form class="d-flex" action="register">
                         <button onclick="cadastro" class="btn btn-outline-dark" type="submit">
                             Cadastre-se
                         </button></form> 

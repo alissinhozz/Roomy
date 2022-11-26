@@ -38,6 +38,7 @@ $routes->get('meusvinculos', 'MeusVinculos::index');
 $routes->get('cadastro', 'Cadastro::index');
 $routes->get('login', 'Login::index');
 $routes->get('imovel', 'Imovel::index');
+$routes->get('/dashboard', 'Dashboard::index',['filter' => 'auth']);
 
 /*
  * --------------------------------------------------------------------
