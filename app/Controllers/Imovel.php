@@ -5,11 +5,11 @@ use App\Models\SingleImoveisModel;
 
 class Imovel extends BaseController
 {
-    public function index($idImovel)
+    public function index($id)
     {
        $singleImoveisModel = new SingleImoveisModel();
        $dados =[
-        'imovel'=> $singleImoveisModel->find($idImovel)
+        'imovel'=> $singleImoveisModel->find($id)
        ];
        return view('imovel', $dados);
     }
