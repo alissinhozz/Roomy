@@ -5,5 +5,5 @@ use CodeIgniter\Model;
 class UserModel extends Model{
     protected $table = 'usuario';
     protected $primaryKey = 'id';
-    protected $allowedFields = ['nome','email','senha'];
+protected $allowedFields = ['nome','email','senha'/*,'telefone', 'nascimento', 'genero', 'tipo', 'descricao'*/];
 }

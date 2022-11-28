@@ -32,11 +32,11 @@ class Login extends Controller
                 echo 'oiii';
                 return redirect()->to('/');
             }else{
-                $session->setFlashdata('msg', 'Wrong Password');
+                $session->setFlashdata('msg', 'Senha incorreta');
                 return redirect()->to('/login');
             }
         }else{
-            $session->setFlashdata('msg', 'Email not Found');
+            $session->setFlashdata('msg', 'E-mail não cadastrado');
             return redirect()->to('/login');
         }
     }
