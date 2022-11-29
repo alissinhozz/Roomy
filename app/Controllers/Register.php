@@ -23,8 +23,9 @@ class Register extends Controller
 			'email' 		=> 'required|min_length[6]|max_length[50]|valid_email|is_unique[usuario.email]',
 			'num_tel' 			=> 'required|min_length[9]|max_length[20]',
 			'senha' 		=> 'required|min_length[6]|max_length[200]',
+
 			'confsenha' 	=> 'matches[senha]'
-			
+
 		];
 
 		if($this->validate($rules)){
