@@ -21,8 +21,10 @@ class Register extends Controller
 		$rules = [
 			'nome' 			=> 'required|min_length[3]|max_length[20]',
 			'email' 		=> 'required|min_length[6]|max_length[50]|valid_email|is_unique[usuario.email]',
+			'num_tel' 			=> 'required|min_length[9]|max_length[20]',
 			'senha' 		=> 'required|min_length[6]|max_length[200]',
 			'confsenha' 	=> 'matches[senha]'
+			
 		];
 
 		if($this->validate($rules)){
@@ -30,6 +32,11 @@ class Register extends Controller
 			$data = [
 				'nome' 	=> $this->request->getVar('nome'),
 				'email' 	=> $this->request->getVar('email'),
+				'descricao' 	=> $this->request->getVar('descricao'),
+				'genero' 	=> $this->request->getVar('genero'),
+				'num_tel' 	=> $this->request->getVar('num_tel'),
+				'data_nas' 	=> $this->request->getVar('data_nas'),
+				'tipo' 	=> $this->request->getVar('tipo'),
 				'senha' => password_hash($this->request->getVar('senha'), PASSWORD_DEFAULT)
 			];
 			$model->save($data);
