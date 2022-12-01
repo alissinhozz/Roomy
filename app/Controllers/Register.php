@@ -2,9 +2,22 @@
 
 use CodeIgniter\Controller;
 use App\Models\UserModel;
+use CodeIgniter\HTTP\IncomingRequest;
 
 class Register extends Controller
 {
+
+    protected $mRequest;
+    public function __construct()
+    {
+        $this->mRequest = service("request");
+    }
+
+    public function someFunction(){
+        $this->mRequest->getVar();
+    } 
+
+
 	public function index()
 	{
 		//include helper form

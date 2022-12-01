@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -9,13 +12,13 @@
 
     <title>Cadastro de usuário | Roomy</title>
   </head>
-  <body>
+  <body style="background-color: #FFE1E1;">
     <div class="container">
         <div class="row justify-content-md-center">
 
             <div class="col-6">
-
-                <h1>Cadastre-se</h1>
+            <img src="/assets/loguinho.png" class="rounded mx-auto d-block" alt="...">
+                 <div class="text-center"> <h1>Cadastre-se</h1>
 
 
                 <?php if(isset($validation)):?>
@@ -34,9 +37,9 @@
                         <label for="InputForCell" class="form-label">Número de telefone</label>
                         <input type="tel" name="num_tel" class="form-control" id="InputForCell" value="<?= set_value('num_tel') ?>">
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-3" text-center> 
                         <label for="InputForDescricao" class="form-label">Descrição</label>
-                        <textarea id="descricao" name="descricao" rows="4" cols="50" value="<?= set_value('descricao') ?>"></textarea>
+                        <textarea id="descricao" name="descricao" rows="4" cols="70" value="<?= set_value('descricao') ?>"></textarea>
                         
                     </div>
                     <div class="mb-3">
@@ -47,15 +50,13 @@
                         <label for="InputForNas" class="form-label">Data de nascimento</label>
                         <input type="date" name="data_nas" class="form-control" id="InputForNas" value="<?= set_value('data_nas') ?>">
                     </div>
-                    <label for="tipo">Tipo</label>
+                    <label for="tipo">Tipo de conta</label>
 	                <select id="tipo" name="tipo">
 		            <option value="1">Locatário</option>
 		            <option value="2">Inquilino</option>    
 	                </select>
-                    <div class="mb-3">
-                        <label for="InputForimg" class="form-label">Uma foto sua</label>
-                        <input type="file" name="foto" class="form-control" id="InputForimg">
-                    </div>
+            <br>
+            <br>
                     <div class="mb-3">
                         <label for="InputForPassword" class="form-label">Senha</label>
                         <input type="password" name="senha" class="form-control" id="InputForPassword" value="">
@@ -64,5 +65,21 @@
                         <label for="InputForPassword" class="form-label">Confirmar a Senha</label>
                         <input type="password" name="confsenha" class="form-control" id="InputForPassword" value="">
                     </div>
-                    <button type="submit">Cadastrar</button>
-  </body>
+                    <h1>Cadastrar Imagem</h1>
+        <?php
+        if(isset($_SESSION['msg'])){
+            echo $_SESSION['msg'];
+            unset($_SESSION['msg']);
+        }
+        ?>
+        <form method="POST" action="proc_cad_img.php" enctype="multipart/form-data">
+            <label>Nome:</label>
+            <input type="text" name="nome" placeholder="Digitar o nome"><br><br>
+            
+            <label>Imagem</label>
+            <input type="file" name="imagem"><br><br>
+            
+            <input name="SendCadImg" type="submit" value="Cadastrar">
+        </form>
+    </body>
+</html>

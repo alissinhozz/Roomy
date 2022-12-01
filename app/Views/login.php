@@ -1,3 +1,5 @@
+
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -9,12 +11,14 @@
 
     <title>Login</title>
   </head>
-  <body>
-    <div class="container">
+  <body style="background-color: #FFE1E1">
+    
+  <div class="container" >
         <div class="row justify-content-md-center">
 
             <div class="col-6">
-                <h1>Logue-se</h1>
+            <img src="/assets/loguinho.png" class="rounded mx-auto d-block" alt="...">
+                 <div class="text-center">  <h1>Logue-se</h1>
                 <?php if(session()->getFlashdata('msg')):?>
                     <div class="alert alert-danger"><?= session()->getFlashdata('msg') ?></div>
                 <?php endif;?>
