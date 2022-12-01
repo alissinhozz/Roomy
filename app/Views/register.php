@@ -1,5 +1,11 @@
 <?php
 session_start();
+var_dump($_FILES);
+if(isset($_FILES['arquivo'])){
+    echo "arquivo enviado";
+}
+   
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -13,6 +19,7 @@ session_start();
     <title>Cadastro de usuário | Roomy</title>
   </head>
   <body style="background-color: #FFE1E1;">
+  <form method="POST" enctype="multipart/form-data" action=""></form>
     <div class="container">
         <div class="row justify-content-md-center">
 
