@@ -1,4 +1,4 @@
-<?php echo $this->extend('layout') ?>
+<?php echo $this->extend('templates/layout') ?>
 <?php echo $this->section('content') ?>
 <section class="py-5">
 <div class="container px-4 px-lg-5 mt-5">

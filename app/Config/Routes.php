@@ -17,11 +17,11 @@ if (file_exists(SYSTEMPATH . 'Config/Routes.php')) {
  * --------------------------------------------------------------------
  */
 $routes->setDefaultNamespace('App\Controllers');
-$routes->setDefaultController('Home');
+$routes->setDefaultController('Main');
 $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
-$routes->setAutoRoute(true);
+
 
 /*
  * --------------------------------------------------------------------
@@ -37,7 +37,8 @@ $routes->get('minhaconta', 'Conta::index');
 $routes->get('meusvinculos', 'MeusVinculos::index');
 $routes->get('cadastro', 'Cadastro::index');
 $routes->get('login', 'Login::index');
-$routes->get('imovel', 'Imovel::index');
+$routes->get('/main/(:any)', 'Main::$1');
+$routes->post('/main/(:any)', 'Main::$1');
 
 /*
  * --------------------------------------------------------------------
