@@ -64,7 +64,7 @@
     <li class="list-group-item"><?php echo $imovel['descricao']?></li>
   </ul>
 </div>
-<h4>Se interessou? Entre em contato com <?php echo $imovel['contatoUser']?></h4>
+<h4>Se interessou? Entre em contato com <?php echo $imovel['contato']?></h4>
 <button class="button button2">Quero esse!</button>
 
 </center>
