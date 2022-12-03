@@ -1,5 +1,4 @@
-<?php echo $this->extend('templates/layout') ?>
-<?php echo $this->section('content') ?>
+
 <div class="card card-primary rounded-0">
     <div class="card-header">
         <h4 class="text-muted"><i class="far fa-edit"></i>Editar Imóvel</h4>
@@ -65,4 +64,3 @@
         <a class="btn btn-secondary" href="<?= base_url('main/view_details/'.(isset($data['id']) ? $data['id'] : '')) ?>"><i class="fa fa-times"></i> Cancelar</a>
     </div>
 </div>
-<?php echo $this->endSection() ?>
