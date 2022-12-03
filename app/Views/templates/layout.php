@@ -24,7 +24,6 @@
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="pesquisa">Pesquisar</a></li>
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="<?= base_url('main/list') ?>">Lista Imóveis</a></li>
                         <li class="nav-item"><a class="nav-link" href="minhaconta">Minha conta</a></li>
-                        <li class="nav-item"><a class="nav-link" href="meusvinculos">Meus vínculos</a></li>
                             
                     </ul>
                     <form class="d-flex" action="login">

@@ -60,11 +60,11 @@
     <li class="list-group-item">Quatidade de banheiros: <?php echo $imovel['qtd_ban']?></li>
     <li class="list-group-item">Quatidade de pessoas: <?php echo $imovel['qtd_pessoas']?></li>
     <li class="list-group-item">Tamanho do imóvel: <?php echo $imovel['tam_imovel']?>m²</li>
-    <li class="list-group-item">Tamanho do quarto: <?php echo $imovel['tam_quarto']?>m²</li>
+    <li class="list-group-item">Tamanho do quarto: <?php echo $imovel['tamquarto']?>m²</li>
     <li class="list-group-item"><?php echo $imovel['descricao']?></li>
   </ul>
 </div>
-<h4>Se interessou? Entre em contato com <?php echo $imovel['contato']?></h4>
+<h4>Se interessou? Entre em contato com <?php echo $imovel['contatoUser']?></h4>
 <button class="button button2">Quero esse!</button>
 
 </center>

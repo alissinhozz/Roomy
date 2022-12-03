@@ -4,7 +4,7 @@ use CodeIgniter\Model;
 
 class SingleImoveisModel extends Model
 {
-    protected $table = 'imovel';
+    protected $table = 'imovell';
     protected $primaryKey = 'id';
     protected $allowedFields = [
         'id',
@@ -13,13 +13,13 @@ class SingleImoveisModel extends Model
         'estado',
         'foto',
         'inst_prox',
-        'contato',
+        'contatoUser',
         'descricao',
         'tipo',
         'qtd_pessoas',
         'qtd_ban',
         'tam_imovel',
-        'tam_quarto'
+        'tamquarto'
 
         
 
