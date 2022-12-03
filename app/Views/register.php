@@ -50,8 +50,12 @@ if(isset($_FILES['arquivo'])){
                         
                     </div>
                     <div class="mb-3">
-                        <label for="InputForGenero" class="form-label">Gênero</label>
-                        <input type="text" name="genero" class="form-control" id="InputForGenero" value="<?= set_value('genero') ?>">
+                        <label for="InputForGenero">Gênero</label>
+                        <select id="genero" name="genero">
+		            <option value="1">Masculino</option>
+		            <option value="2">Feminino</option>    
+                    <option value="3">Outro</option>    
+	                </select>
                     </div>
                     <div class="mb-3">
                         <label for="InputForNas" class="form-label">Data de nascimento</label>
@@ -72,7 +76,6 @@ if(isset($_FILES['arquivo'])){
                         <label for="InputForPassword" class="form-label">Confirmar a Senha</label>
                         <input type="password" name="confsenha" class="form-control" id="InputForPassword" value="">
                     </div>
-                    <h1>Cadastrar Imagem</h1>
         <?php
         if(isset($_SESSION['msg'])){
             echo $_SESSION['msg'];
@@ -80,12 +83,8 @@ if(isset($_FILES['arquivo'])){
         }
         ?>
         <form method="POST" action="proc_cad_img.php" enctype="multipart/form-data">
-            <label>Nome:</label>
-            <input type="text" name="nome" placeholder="Digitar o nome"><br><br>
-            
             <label>Imagem</label>
             <input type="file" name="imagem"><br><br>
-            
             <input name="SendCadImg" type="submit" value="Cadastrar">
         </form>
     </body>

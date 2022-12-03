@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Controllers;
 
 class Conta extends BaseController
