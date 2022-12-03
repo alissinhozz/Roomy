@@ -20,14 +20,14 @@
             <div class="container px-4 px-lg-5">
             <img src="\assets\loguinho.png" alt="logo" width=180 height=90>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="<?php echo base_url()?>">Home</a></li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="<?php echo base_url("pesquisa")?>">Pesquisar</a></li>
-                        <li class="nav-item"><a class="nav-link" href="<?php echo base_url("minhaconta")?>">Minha conta</a></li>
-                        <li class="nav-item"><a class="nav-link" href="<?php echo base_url("meusvinculos")?>">Meus vínculos</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="<?php echo base_url()?>">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="pesquisa">Pesquisar</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="<?= base_url('main/list') ?>">Lista Imóveis</a></li>
+                        <li class="nav-item"><a class="nav-link" href="minhaconta">Minha conta</a></li>
+                            
+  </ul>
                     <form class="d-flex" action="<?php echo base_url("login")?>">
                         <button href="login" class="btn btn-outline-dark" type="submit">
                             Login
@@ -48,13 +48,10 @@
         </aside>  
     <center>
     <div class="card" style="width: 50rem;  margin-top: 40px;">
-  <img class="card-img-top" src=".../100px180/?text=Image cap" alt="">
-  <div class="card-body">
-    <h5 class="card-title"><img src="" alt=""></h5>
-
-  </div>
+ 
   <div class="card-footer">
   <ul class="list-group list-group-flush">
+  <img class="card-img-top" src="\assets\home.jpg" width=400 height=100%>
     <li class="list-group-item"><?php echo $imovel['cidade']?> - <?php echo $imovel['estado']?></li>
     <li class="list-group-item"><?php echo $imovel['tipo']?> próximo (a) a (ao) <?php echo $imovel['inst_prox']?> e no bairro <?php echo $imovel['bairro']?></li>
     <li class="list-group-item">Quatidade de banheiros: <?php echo $imovel['qtd_ban']?></li>

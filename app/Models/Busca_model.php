@@ -4,10 +4,10 @@ use CodeIgniter\Model;
 
 class Busca_model extends Model
 {
-   protected $table = 'imovel';
-   protected $primaryKey = 'idImovel';
+   protected $table = 'imovell';
+   protected $primaryKey = 'id';
     protected $allowedFields = [
-      'idImovel',
+      'id',
       'bairro',
       'cidade',
       'estado',

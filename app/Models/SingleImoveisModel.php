@@ -13,15 +13,13 @@ class SingleImoveisModel extends Model
         'estado',
         'foto',
         'inst_prox',
-        'contatoUser',
+        'contato',
         'descricao',
         'tipo',
         'qtd_pessoas',
         'qtd_ban',
         'tam_imovel',
         'tamquarto'
-
-        
 
     ];
     
