@@ -32,12 +32,12 @@
                     <a class="nav-link active" aria-current="page" href="<?= base_url() ?>">Home</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link active" href="<?= base_url('pesquisa') ?>"> Pesquisar Imóvel</a>
+                    <a class="nav-link active" href="<?= base_url('pesquisa') ?>"> Pesquisar</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link active" href="<?= base_url('main/list') ?>"> Lista Imóveis</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="#">Minha conta</a></li>
+                    <li class="nav-item"><a class="nav-link" href="minhaconta">Minha conta</a></li>
                         
                 </ul>
             </div>
