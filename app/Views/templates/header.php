@@ -32,7 +32,7 @@
                     <a class="nav-link active" aria-current="page" href="<?= base_url() ?>">Home</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="pesquisa">Pesquisar Imóvel</a>
+                    <a class="nav-link active" aria-current="page" href="/pesquisa">Pesquisar Imóvel</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link active" href="<?= base_url('main/list') ?>"> Lista Imóveis</a>
@@ -41,16 +41,15 @@
                     
                 </ul>
             </div>
-            <form class="d-flex" action="login">
+            <form class="d-flex" action="/login">
                         <button href="" class="btn btn-outline-dark" type="submit">
                             Login
                         </button>
                         </form>
-                        <form class="d-flex" action="cadastro">
+                        <form class="d-flex" action="/register">
                         <button onclick="cadastro" class="btn btn-outline-dark" type="submit">
                             Cadastre-se
                         </button></form> 
- 
         </div>
     </nav>
     <!--End Top Navigation Bar -->

@@ -36,7 +36,7 @@ class Login extends Controller
                 //return redirect()->to('/');
 
                 if($tipo ==='1'){
-                    return redirect()->to('/pesquisa');
+                    return redirect()->to('/main/list');
                 }elseif($tipo==='2'){
                     return redirect()->to('/');
                 }
