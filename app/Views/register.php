@@ -61,10 +61,10 @@ if(isset($_FILES['arquivo'])){
                         <label for="InputForNas" class="form-label">Data de nascimento</label>
                         <input type="date" name="data_nas" class="form-control" id="InputForNas" value="<?= set_value('data_nas') ?>">
                     </div>
-                    <label for="tipo">Tipo de conta</label>
+                    <label for="tipo" require>Tipo de conta</label>
 	                <select id="tipo" name="tipo">
-		            <option value="1">Locatário</option>
-		            <option value="2">Inquilino</option>    
+		            <option value="1" id="1">Locatário</option>
+		            <option value="2" id="2">Inquilino</option>    
 	                </select>
             <br>
             <br>
