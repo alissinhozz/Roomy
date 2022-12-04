@@ -4,7 +4,9 @@ use CodeIgniter\Model;
 
 class Busca_model extends Model
 {
-   protected $table = 'imovel';
+
+   protected $table = 'imovell';
+
    protected $primaryKey = 'id';
     protected $allowedFields = [
       'id',
