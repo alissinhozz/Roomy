@@ -478,6 +478,7 @@ legend + * {
 
 ::-webkit-file-upload-button {
   font: inherit;
+  
 }
 
 ::file-selector-button {
@@ -2284,7 +2285,7 @@ progress {
   -webkit-margin-end: 0.75rem;
           margin-inline-end: 0.75rem;
   color: #212529;
-  background-color: #e9ecef;
+  background-color: #efe9ee;
   pointer-events: none;
   border-color: inherit;
   border-style: solid;
@@ -2314,7 +2315,7 @@ progress {
   -webkit-margin-end: 0.75rem;
           margin-inline-end: 0.75rem;
   color: #212529;
-  background-color: #e9ecef;
+  background-color: #cfcfcf;
   pointer-events: none;
   border-color: inherit;
   border-style: solid;
@@ -2631,7 +2632,7 @@ textarea.form-control-lg {
   }
 }
 .form-range::-webkit-slider-thumb:active {
-  background-color: #b6d4fe;
+  background-color: #579dff;
 }
 .form-range::-webkit-slider-runnable-track {
   width: 100%;
@@ -3053,13 +3054,13 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #fff;
-  background-color: #0d6efd;
-  border-color: #0d6efd;
+  background-color: #EB6D6D;
+  border-color: #ffffff;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #0b5ed7;
-  border-color: #0a58ca;
+  background-color: #EB6D6D;
+  border-color: #ffffff;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
@@ -3083,8 +3084,8 @@ textarea.form-control-lg {
 
 .btn-secondary {
   color: #fff;
-  background-color: #6c757d;
-  border-color: #6c757d;
+  background-color: #0c76d3;
+  border-color: #0087fd;
 }
 .btn-secondary:hover {
   color: #fff;
@@ -3313,7 +3314,7 @@ textarea.form-control-lg {
 }
 .btn-outline-primary:disabled, .btn-outline-primary.disabled {
   color: #0d6efd;
-  background-color: transparent;
+  background-color: #0d6efd;
 }
 
 .btn-outline-secondary {
@@ -3338,7 +3339,7 @@ textarea.form-control-lg {
 }
 .btn-outline-secondary:disabled, .btn-outline-secondary.disabled {
   color: #6c757d;
-  background-color: transparent;
+  background-color: #0d6efd;
 }
 
 .btn-outline-success {
@@ -3388,7 +3389,7 @@ textarea.form-control-lg {
 }
 .btn-outline-info:disabled, .btn-outline-info.disabled {
   color: #0dcaf0;
-  background-color: transparent;
+  background-color: #0d6efd;
 }
 
 .btn-outline-warning {

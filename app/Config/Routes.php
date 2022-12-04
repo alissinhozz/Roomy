@@ -39,6 +39,9 @@ $routes->get('cadastro', 'Cadastro::index');
 $routes->get('login', 'Login::index');
 $routes->get('/main/(:any)', 'Main::$1');
 $routes->post('/main/(:any)', 'Main::$1');
+$routes->get('imovel', 'Imovel::index');
+$routes->get('/dashboard', 'Dashboard::index',['filter' => 'auth']);
+
 
 /*
  * --------------------------------------------------------------------
