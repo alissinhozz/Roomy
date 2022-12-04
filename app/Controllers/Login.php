@@ -33,8 +33,19 @@ class Login extends Controller
                 ];
                 $session->set($ses_data);
                 echo 'oiii';
-                return redirect()->to('/');
-            }else{
+                //return redirect()->to('/');
+
+                if($tipo ==='1'){
+                    return redirect()->to('/pesquisa');
+                }elseif($tipo==='2'){
+                    return redirect()->to('/');
+                }
+            }
+            
+            
+            
+            
+            else{
                 $session->setFlashdata('msg', 'Senha incorreta');
                 return redirect()->to('/login');
             }
