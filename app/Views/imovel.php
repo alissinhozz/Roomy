@@ -47,7 +47,7 @@
 
 <div class="card" style="background-color:white">
   <img src="/assets/pessoa.jpg" style="width:30%; margin: auto;" >
-  <p class="title">Proprietária</p>
+  <p class="title">Proprietária da casa</p>
   <p>Estuda em Unochapecó</p>
   <div style="margin: 24px 0;">
     <a href="#"><i class="fa fa-dribbble"></i></a> 
