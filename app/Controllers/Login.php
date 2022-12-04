@@ -17,15 +17,18 @@ class Login extends Controller
         $model = new UserModel();
         $email = $this->request->getVar('email');
         $senha = $this->request->getVar('senha');
+        $tipo = $this->request->getVar('tipo');
         $data = $model->where('email', $email)->first();
         if($data){
             $pass = $data['senha'];
+            $tipo = $data['tipo'];
             $verify_pass = password_verify($senha, $pass);
             if($verify_pass){
                 $ses_data = [
                     'id'       => $data['id'],
                     'nome'     => $data['nome'],
                     'email'    => $data['email'],
+                    'tipo'     => $data['tipo'],
                     'logged_in'     => TRUE
                 ];
                 $session->set($ses_data);
