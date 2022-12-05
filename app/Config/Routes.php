@@ -33,7 +33,13 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->get('pesquisa', 'Pesquisa::index');
+
 $routes->get('minhaconta', 'Conta::index');
+$routes->get('users-list', 'Conta::index');
+$routes->get('edit-view/(:num)', 'Conta::singleUser/$1');
+$routes->post('update', 'Conta::update');
+$routes->get('delete/(:num)', 'Conta::delete/$1');
+
 $routes->get('meusvinculos', 'MeusVinculos::index');
 $routes->get('cadastro', 'Cadastro::index');
 $routes->get('login', 'Login::index');
@@ -41,6 +47,7 @@ $routes->get('/main/(:any)', 'Main::$1');
 $routes->post('/main/(:any)', 'Main::$1');
 $routes->get('imovel', 'Imovel::index');
 $routes->get('/dashboard', 'Dashboard::index',['filter' => 'auth']);
+
 
 
 /*

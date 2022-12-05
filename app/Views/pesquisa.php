@@ -1,6 +1,6 @@
 <?php echo $this->extend('templates/layout') ?>
 <?php echo $this->section('content') ?>
-
+ 
 <form method="post" style="width: 50rem;  margin-top: 40px; margin-left: 200PX">
 <div class="input-group">
   <input type="text" name="inputName" class="form-control rounded" placeholder="Insira o nome da cidade" aria-label="Search" aria-describedby="search-addon" />
@@ -29,22 +29,22 @@
                                 </div>
                             </div>
                             <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent"> 
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                             <form class="d-flex" action="imovel">
                             <p><?php echo anchor('imovel/index/'.$city['id'], 'Saiba mais')?></p>
                              </form>
                             </div>
                         </div>
                     </div>
-              
-                
+             
+               
         <?php endforeach;
     }
     ?>
      </div>
     </div>
-        
-        </section> 
-
-
+       
+        </section>
+ 
+ 
 <?php echo $this->endSection() ?>
