@@ -3,6 +3,14 @@
 namespace App\Models;
 use CodeIgniter\Model;
 
+class UsuarioModels extends Model{
+    protected $table = 'usuario';
+    protected $primaryKey = 'id';
+
+
+    protected $allowedFields = ['nome', 'email', 'senha', 'foto', 'genero', 'num_tel', 'data_nas', 'tipo', 'descricao'];
+}
+
 class UsuarioModel extends Model
 {
     function inserir($nome, $login,$senha)
@@ -52,16 +60,4 @@ class UsuarioModel extends Model
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
 
-    
 }
-
-namespace App\Models;
-//use CodeIgniter\Model;
-class UsuarioModels extends Model{
-    protected $table = 'usuario';
-    protected $primaryKey = 'id';
-    
-
-    protected $allowedFields = ['nome', 'email', 'senha', 'foto', 'genero', 'num_tel', 'data_nas', 'tipo', 'descricao'];
-}
-

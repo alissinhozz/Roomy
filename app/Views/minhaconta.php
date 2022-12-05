@@ -19,73 +19,36 @@
             <thead>
             <tr>
                 <th>Id usuario</th>
-                <!--</tr>
-                <tr>-->
-                    <th>Nome</th>
-                <!--</tr>
-                <tr>-->
-                    <th>Email</th>
-                <!--</tr>
-                <tr>-->
-                    <th>Senha</th>
-                <!--</tr>
-                <tr>-->
-                    <th>Foto</th> 
-                <!--</tr>
-                <tr>-->
-                    <th>Gênero</th>
-                <!--</tr>
-                <tr>-->
-                    <th>Número de telefone</th>
-               <!-- </tr>
-                <tr>-->
-                    <th>Data de Nascimento</th>
-               <!-- </tr>
-                <tr>-->
-                    <th>Tipo</th>
-               <!-- </tr>
-                <tr>-->
-                    <th>Descrição</th>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Senha</th>
+                <th>Foto</th>
+                <th>Gênero</th>
+                <th>Número de telefone</th>
+                <th>Data de Nascimento</th>
+                <th>Tipo</th>
+                <th>Descrição</th>
                 </tr>
-                
             </thead>
             <tbody>
                 <?php if($usuario): ?>
-                <?php foreach($usuario as $usu): ?>
-                <tr>
-                    <td><?php echo $usu['id'];?></td>
-                <!--</tr>
-                <tr>-->
-                    <td><?php echo $usu['nome']; ?></td>
-               <!-- </tr>
-                <tr>-->
-                    <td><?php echo $usu['email']; ?></td>
-               <!-- </tr>
-                <tr>-->
-                    <td><?php echo $usu['senha']; ?></td>
-                <!--</tr>
-                <tr>-->
-                    <td><?php echo $usu['genero']; ?></td>
-               <!-- </tr>
-                <tr>-->
-                    <td><?php echo $usu['num_tel']; ?></td>
-                <!--</tr>
-                <tr>-->
-                    <td><?php echo $usu['data_nas']; ?></td>
-                <!--</tr>                
-                <tr>-->
-                    <td><?php echo $usu['tipo']; ?></td>
-                <!--</tr>
-                <tr>-->
-                    <td><?php echo $usu['descricao']; ?></td>
-               <!--</tr>
-                <tr>-->
+                    <tr>
+                    <td><?php echo $usuario['id']; ?></td>
+                    <td><?php echo $usuario['nome']; ?></td>
+                    <td><?php echo $usuario['email']; ?></td>
+                    <td><?php echo $usuario['data_nas']; ?></td>
+                    <td><?php echo $usuario['num_tel']; ?></td>
+                    <td><?php echo $usuario['genero']; ?></td>
+                    <td><?php echo $usuario['descricao']; ?></td>
+                    <td><?php echo $usuario['senha']; ?></td>                    
+                    <td><?php echo $usuario['tipo']; ?></td>
+            
                     <td>
-                    <a href="<?php echo base_url('edit-view/'.$usu['id']);?>" class="btn btn-primary btn-sm">Editar</a>
-                    <a href="<?php echo base_url('delete/'.$usu['id']);?>" class="btn btn-danger btn-sm">Excluir Conta</a>
+                    <a href="<?php echo base_url('edit-view/'.$usuario['id']);?>" class="btn btn-primary btn-sm">Editar</a>
+                    <a href="<?php echo base_url('delete/'.$usuario['id']);?>" class="btn btn-danger btn-sm">Excluir Conta</a>
                     </td>
                 </tr>
-                <?php endforeach; ?>
+                <?php //endforeach; ?>
                 <?php endif; ?>
             </tbody>
         </table>

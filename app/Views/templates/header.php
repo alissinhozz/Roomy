@@ -40,7 +40,7 @@
                     <li class="nav-item">
                     <a class="nav-link active" href="<?= base_url('main/list') ?>"> Lista Imóveis</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="#">Minha conta</a></li>
+                    <li class="nav-item"><a class="nav-link" href="<?= base_url('minhaconta') ?>">Minha conta</a></li>
 
                 </ul>
             </div>
