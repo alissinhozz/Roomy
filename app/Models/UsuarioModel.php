@@ -1,14 +1,13 @@
 <?php
-defined('BASEPATH') OR exit ('No direct script acess allowed');
+//defined('BASEPATH') OR exit ('No direct script acess allowed');
 namespace App\Models;
-
 use CodeIgniter\Model;
 
 class UsuarioModel extends Model
 {
     function inserir($nome, $login,$senha)
     {
-        $sql = "INSERT INTO"
+        $sql = "INSERT INTO";
     }
     protected $DBGroup          = 'default';
     protected $table            = 'usuario';
@@ -54,5 +53,15 @@ class UsuarioModel extends Model
     protected $afterDelete    = [];
 
     
+}
+
+namespace App\Models;
+//use CodeIgniter\Model;
+class UsuarioModels extends Model{
+    protected $table = 'usuario';
+    protected $primaryKey = 'id';
+    
+
+    protected $allowedFields = ['nome', 'email', 'senha', 'foto', 'genero', 'num_tel', 'data_nas', 'tipo', 'descricao'];
 }
 
