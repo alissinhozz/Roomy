@@ -7,7 +7,7 @@
         <meta name="author" content="" />
         <title>Roomy | Aluguel para estudantes</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets\loguinho.png" />
+        <link rel="icon" type="image/x-icon" href="assets\favicon.png" />
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
@@ -53,6 +53,44 @@
 
         <!-- Footer-->
         <footer class="py-5 bg-dark">
+        <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6" style="color: white">
+            <h6>Sobre</h6>
+            <p class="text-justify" style="color: white"> O Roomy chegou para ajudar estudantes e universitários a encontrarem um lar aconchegante e adequado, garantindo a viabilidade de uma moradia segura e seu conforto durante seus estudos!
+          </div>
+          <div class="col-xs-6 col-md-3" style="color: white">
+            <h6>Acesso rápido</h6>
+            <ul class="footer-links">
+              <li><a href="http://localhost:8080">Home</a></li>
+              <li><a href="http://localhost:8080/pesquisa">Pesquisar</a></li>
+              <li><a href="http://localhost:8080/minhaconta">Minha conta</a></li>
+            </ul>
+          </div>
+        <div class="col-xs-6 col-md-3" style="color: white">
+        <a><img href="#https://www.instagram.com/ifscchapeco/" src="/assets/loguinho.png" style="width: 230px; height: auto; align-items:center" ></a>
+        <hr>
+        </div>
+        
+        <div class="col l4 offset-l2 s12">
+                <h5 class="white-text" style="text-align: right" Siga nossas redes sociais</h5>
+                <ul>
+                
+                 <h6 class="white-text" style="width: 10px;">Redes socias<h6>
+                    
+                 <a><img href="#https://www.instagram.com/ifscchapeco/" src="/assets/insta.webp" style="width: 40px; height: auto;" ></a>
+                 <a><img href="#https://www.facebook.com/ifscchapeco/" src="/assets/face.png" style="width: 40px; height: auto;"></a>
+                 <a><img href="#!" src="/assets/linkedin.png" style="width: 40px; height: auto;"></a>
+                 <a><img href="#!" src="/assets/gambi.png" style="width: 40px; height: auto;"></a>
+                 <a><img href="#!" src="/assets/gambi.png" style="width: 40px; height: auto;"></a
+                 <div class="col l4 offset-l2 s12">
+                <h5 class="white-text" style="text-align: right" Siga nossas redes sociais</h5>
+                <ul>
+                
+                </ul>
+              </div>
+            </div>
+          </div>
             <div class="container"><p class="m-0 text-center text-white">Copyright &copy; by Roomy</p></div>
         </footer>
         <!-- Bootstrap core JS-->
