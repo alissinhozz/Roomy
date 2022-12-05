@@ -10,37 +10,37 @@ class Conta extends Controller
     {
         //só listar
         $usuarioModel = new UsuarioModel();
-        $data['usuario'] = $usuarioModel->orderBy('idUsuario', 'DESC')->findAll();
+        $data['usuario'] = $usuarioModel->orderBy('id', 'DESC')->findAll();
         return view('minhaconta', $data);
     }
     //show single user
-    public function singleUser($idUsuario = null)
+    public function singleUser($id = null)
     {
         //uma tentativa de edit
         $usuarioModel = new UsuarioModel();
-        $data['user_obj'] = $usuarioModel->where('idUsuario', $idUsuario)->first();
+        $data['user_obj'] = $usuarioModel->where('id', $id)->first();
         return view('editusuario', $data);
     }
     //update user data
     public function update(){
         $usuarioModel = new UsuarioModel();
-        $idUsuario = $this->request->getVar('idUsuario');
+        $id = $this->request->getVar('id');
         $data = [
             'nome' => $this->request->getVar('nome'),
             'email'  => $this->request->getVar('email'),
-            'num_tel'  => $this->request->getVar('num_tel'),
-            'descricao'  => $this->request->getVar('descricao'),
             'senha'  => $this->request->getVar('senha'),
+            'num_tel'  => $this->request->getVar('num_tel'),
             'tipo'  => $this->request->getVar('tipo'),
+            'descricao'  => $this->request->getVar('descricao'),            
             //'fotoUser'  => $this->request->getVar('fotoUser'),
         ];
-        $usuarioModel->update($idUsuario, $data);
+        $usuarioModel->update($id, $data);
         return $this->response->redirect(site_url('/users-list'));
     }
     // delete user
-   public function delete($idUsuario = null){
+   public function delete($id = null){
     $usuarioModel = new UsuarioModel();
-    $data['usuario'] = $usuarioModel->where('idUsuario', $idUsuario)->delete($idUsuario);
+    $data['usuario'] = $usuarioModel->where('id', $id)->delete($id);
      return $this->response->redirect(site_url('cadastro'));
   }  
 }

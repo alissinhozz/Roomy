@@ -18,73 +18,71 @@
         <table class="table table-bordered table-striped" id="users-list">
             <thead>
             <tr>
-                    <th>Id usuario</th>
-                </tr>
-                <tr>
+                <th>Id usuario</th>
+                <!--</tr>
+                <tr>-->
                     <th>Nome</th>
-                </tr>
-                <tr>
+                <!--</tr>
+                <tr>-->
                     <th>Email</th>
-                </tr>
-                <tr>
-                    <th>Data de Nascimento</th>
-                </tr>
-                <tr>
-                    <th>Número de telefone</th>
-                </tr>
-                <tr>
+                <!--</tr>
+                <tr>-->
+                    <th>Senha</th>
+                <!--</tr>
+                <tr>-->
+                    <th>Foto</th> 
+                <!--</tr>
+                <tr>-->
                     <th>Gênero</th>
-                </tr>
-                <tr>
+                <!--</tr>
+                <tr>-->
+                    <th>Número de telefone</th>
+               <!-- </tr>
+                <tr>-->
+                    <th>Data de Nascimento</th>
+               <!-- </tr>
+                <tr>-->
+                    <th>Tipo</th>
+               <!-- </tr>
+                <tr>-->
                     <th>Descrição</th>
                 </tr>
-                <tr>
-                    <th>Senha</th>
-                </tr>
-                <tr>
-                    <th>Tipo</th>
-                </tr>
-                <tr>
-                    <th>Foto</th> 
-                </tr>
+                
             </thead>
             <tbody>
                 <?php if($usuario): ?>
                 <?php foreach($usuario as $usu): ?>
-                    <tr>
-                    <td><?php echo $usu['idUsuario']; ?></td>
-                </tr>
                 <tr>
+                    <td><?php echo $usu['id'];?></td>
+                <!--</tr>
+                <tr>-->
                     <td><?php echo $usu['nome']; ?></td>
-                </tr>
-                <tr>
+               <!-- </tr>
+                <tr>-->
                     <td><?php echo $usu['email']; ?></td>
-                </tr>
-                <tr>
-                    <td><?php echo $usu['data_nas']; ?></td>
-                </tr>
-                <tr>
-                    <td><?php echo $usu['num_tel']; ?></td>
-                </tr>
-                <tr>
-                    <td><?php echo $usu['genero']; ?></td>
-                </tr>
-                <tr>
-                    <td><?php echo $usu['descricao']; ?></td>
-                </tr>
-                <tr>
+               <!-- </tr>
+                <tr>-->
                     <td><?php echo $usu['senha']; ?></td>
-                </tr>
-                <tr>
+                <!--</tr>
+                <tr>-->
+                    <td><?php echo $usu['genero']; ?></td>
+               <!-- </tr>
+                <tr>-->
+                    <td><?php echo $usu['num_tel']; ?></td>
+                <!--</tr>
+                <tr>-->
+                    <td><?php echo $usu['data_nas']; ?></td>
+                <!--</tr>                
+                <tr>-->
                     <td><?php echo $usu['tipo']; ?></td>
-                </tr>
-                <tr>
-                    <td><?php// echo $usu['fotoUser']; ?></td>
-                </tr>
-                <tr>
+                <!--</tr>
+                <tr>-->
+                    <td><?php echo $usu['descricao']; ?></td>
+               <!--</tr>
+                <tr>-->
                     <td>
-                    <a href="<?php echo base_url('edit-view/'.$usu['idUsuario']);?>" class="btn btn-primary btn-sm">Editar</a>
-                    <a href="<?php echo base_url('delete/'.$usu['idUsuario']);?>" class="btn btn-danger btn-sm">Excluir Conta</a>
+                    <a href="<?php echo base_url('edit-view/'.$usu['id']);?>" class="btn btn-primary btn-sm">Editar</a>
+                    <a href="<?php echo base_url('delete/'.$usu['id']);?>" class="btn btn-danger btn-sm">Excluir Conta</a>
                     </td>
                 </tr>
                 <?php endforeach; ?>

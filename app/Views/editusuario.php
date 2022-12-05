@@ -28,34 +28,34 @@
             <div class="col-2"></div>
             <div class="col-8">
                 <form method="post" id="update_usuario" name="update_usuario" action="<?= site_url('/update')?>">
-                    <input type="hidden" name="idUsuario" id="idUsuario" value="<?php echo $user_obj['idUsuario']; ?>">
+                    <input type="hidden" name="id" id="id" value="<?php echo $user_obj['id']; ?>">
                     <div class="form-group">
                         <label>Nome</label>
-                        <input type="text" name="nome" class="form-control" value="<?php echo $user_obj['nome']; ?>">
+                       <input type="text" name="nome" class="form-control" value="<?php echo $user_obj['nome']; ?>">
                     </div>
                     <div class="form-group">
                         <label>Email</label>
                         <input type="email" name="email" class="form-control" value="<?php echo $user_obj['email']; ?>">
                     </div>
                     <div class="form-group">
-                        <label>Número de telefone</label>
-                        <input type="tel" name="num_tel" class="form-control" value="<?php echo $user_obj['num_tel']; ?>">
-                    </div>
-                    <div class="form-group">
-                        <label>Descrição</label>
-                        <input type="text" name="descricao" class="form-control" value="<?php echo $user_obj['descricao']; ?>">
-                    </div>
-                    <div class="form-group">
                         <label>Senha</label>
                         <input type="password" name="senha" class="form-control" value="<?php echo $user_obj['senha']; ?>">
+                    </div>
+                    <div class="form-group">
+                        <label>Foto</label>
+                        <input type="image" name="fotoUser" class="form-control" value="<?php// echo $user_obj['fotoUser']; ?>">
+                    </div>
+                    <div class="form-group">
+                        <label>Número de telefone</label>
+                        <input type="tel" name="num_tel" class="form-control" value="<?php echo $user_obj['num_tel']; ?>">
                     </div>
                     <div class="form-group">
                         <label>Tipo</label>
                         <input type="text" name="tipo" class="form-control" value="<?php echo $user_obj['tipo']; ?>">
                     </div>
                     <div class="form-group">
-                        <label>Foto</label>
-                        <input type="image" name="fotoUser" class="form-control" value="<?php// echo $user_obj['fotoUser']; ?>">
+                        <label>Descrição</label>
+                        <input type="text" name="descricao" class="form-control" value="<?php echo $user_obj['descricao']; ?>">
                     </div>
                     <div class="form-group"><br/>
                     <button type="submit" class="btn btn-info btn-block">Salvar alterações</button>

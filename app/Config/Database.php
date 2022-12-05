@@ -35,7 +35,7 @@ class Database extends Config
         'hostname' => 'localhost',
         'username' => 'root',
         'password' => '',
-        'database' => 'roomy',
+        'database' => 'roomyofc',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,
