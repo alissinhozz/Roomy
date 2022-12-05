@@ -35,10 +35,6 @@ $routes->get('/', 'Home::index');
 $routes->get('pesquisa', 'Pesquisa::index');
 
 $routes->get('minhaconta', 'Conta::index');
-//$routes->get('editarusuario-view/(:num)', 'Conta::singleUser/$1');
-//$routes->post('update', 'Conta::update');
-//https://www.positronx.io/codeigniter-crud-with-bootstrap-and-mysql-example/
-// CRUD RESTful Routes
 $routes->get('users-list', 'Conta::index');
 $routes->get('edit-view/(:num)', 'Conta::singleUser/$1');
 $routes->post('update', 'Conta::update');
