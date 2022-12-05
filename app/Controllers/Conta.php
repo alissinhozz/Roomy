@@ -32,7 +32,6 @@ class Conta extends Controller
             'num_tel'  => $this->request->getVar('num_tel'),
             'tipo'  => $this->request->getVar('tipo'),
             'descricao'  => $this->request->getVar('descricao'),            
-            //'fotoUser'  => $this->request->getVar('fotoUser'),
         ];
         $usuarioModel->update($id, $data);
         return $this->response->redirect(site_url('/users-list'));
